@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <link href='app.css' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="scan.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	/*phonetics = JSON.parse('phonetics.JSON');*/
+	var poem = document.getElementbyID("input").value;
+	var scanned = document.getElementbyID("output").value;
+	$('submit').click(function scan (){
+		document.getElementbyID('output').value = document.getElementbyID('input').value;
+	});
+});
+</script>
+</head>
+<form >
+<input type='text' id='input'>
+<output type='text' id='output'></output>
+<input type='submit' onclickvalue ='submit'>
+</form>
+  </html>
